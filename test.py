@@ -1,5 +1,6 @@
 import h5py
 import datetime as dt
+import numpy as np
 
 ### .mat file의 Data를 Import 해서 List로 저장
 
@@ -19,6 +20,6 @@ for k, v in f.items():
 
 print(data[20][1])
 print(len(data[3999]))
-
+print(np.random.normal(0,1))
 ## noise 데이터파일 포맷팅
 print (dt.datetime.now().strftime("%Y-%m%d-%H%M%S-%f"))

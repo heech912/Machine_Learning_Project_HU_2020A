@@ -23,7 +23,7 @@ def create_train_data():
     trainData_Name = "trainData-"+dt.datetime.now().strftime("%Y-%m%d-%H%M%S-%f")
     tf = open("train_data/"+trainData_Name+".txt", "w")
     tlf = open("train_data/trainData_List.txt", "a")
-    tlf.write("/n"+trainData_Name)
+    tlf.write(trainData_Name+"\n")
     for param in range(ans_start, ans_end - ans_interval, ans_interval):
         filepath = 'matlab_data/' + data_name +"_"+ str(param) + ".mat"
         f = h5py.File(filepath, 'r')
@@ -32,7 +32,6 @@ def create_train_data():
         for label, raw_data in f.items():
             dataArr = raw_data
         for dataSet in raw_data:
-            for data in dataSet:
-                tf.write(str(data) + " ")
+            tf.write(str(dataSet[0]) + " " + str(dataSet[1] + np.random.normal(cond_mean, cond_stdev)) + " ")
             tf.write("/ ")
     prnt("가상 실험 데이터 생성이 완료되었습니다 : " + trainData_Name)
