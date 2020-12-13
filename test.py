@@ -23,3 +23,11 @@ print(len(data[3999]))
 print(np.random.normal(0,1))
 ## noise 데이터파일 포맷팅
 print (dt.datetime.now().strftime("%Y-%m%d-%H%M%S-%f"))
+
+## python file i/o
+tlf = open("train_data/trainData_List.txt", "r")
+a = tlf.read().split('\n')
+a.pop(len(a)-1)
+a.sort(reverse=True)
+for idx, val in enumerate(a):
+    print(str(idx)+ " : " + val)
