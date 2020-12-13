@@ -1,0 +1,3 @@
+slope 0.11121916376306637 / y_intercept 1.0371602787456293 / RSS [0.98365553] / standard 12.0 / err_percent 5.0 / regression_type 1 / lambda 0
+slope 0.11165296167247396 / y_intercept 0.9226132404180589 / RSS [0.98363972] / standard 12.0 / err_percent 5.0 / regression_type 2 / lambda 0.5
+slope 0.11195337552234629 / y_intercept 0.8433229131554283 / RSS [0.98361026] / standard 12.0 / err_percent 5.0 / regression_type 3 / lambda 0.5
