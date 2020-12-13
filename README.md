@@ -24,4 +24,5 @@ py -m pip install numpy
 ```{.bash}
 py -m pip install matplotlib
 ```
+* datetime(built-in) : data 추출 시간 
 * (scipy) : mat 파일 load, 단 matlab v7.3 파일에는 불가

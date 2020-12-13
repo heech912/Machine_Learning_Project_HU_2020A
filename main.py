@@ -1,5 +1,5 @@
 from util import *
-from mode import create_train_data, train_regression
+from mode import create_train_data, train_regression, estimation
 
 title()
 mode = ""
@@ -11,6 +11,8 @@ while mode != ENDCODE :
         create_train_data()
     elif mode == "2":
         train_regression()
+    elif mode == "3":
+        estimation()
 
 
 
