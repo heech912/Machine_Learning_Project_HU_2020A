@@ -1,6 +1,6 @@
 # Machine_Learning_Project_HU_2020A
 
-Electric Motor Torque Constant Estimation & Cargo Mass Regression in EV trolley  
+Cargo Mass Regression in EV trolley  
 
 Machine Learning 해석 CLI 소프트웨어  
 
@@ -24,5 +24,5 @@ py -m pip install numpy
 ```{.bash}
 py -m pip install matplotlib
 ```
-* datetime(built-in) : data 추출 시간 
+* datetime(built-in) : data 추출 시간
 * (scipy) : mat 파일 load, 단 matlab v7.3 파일에는 불가
